@@ -1,0 +1,200 @@
+	
+/*là on va faire appel aux classes qu'on a défini dans le fichier .html ett puis on ajouter notre design en CSS*/
+
+
+	body{
+/*margin définit la taille des marges sur les quatre côtés de notre page*/
+
+margin: 0;
+
+/*padding permet dedéfinir les différents écarts de remplissage sur les quatre côtés d'un élément */
+padding: 0;
+}
+
+/--------------navigation----------/
+
+#nav-bar
+{
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+
+/*positionner notre logo au haut à gauche et définir ses mesures*/
+.navbar-brand img{
+width:230px;
+	height: 75px;
+	padding-left: 13px;
+}
+
+.navbar-nav li{
+padding: 0 10px;
+
+}
+.navbar-nav li a {
+	float: right;
+	text-align: left;
+}
+#nav-bar ul li a:hover{
+	color: #007bff!important;
+}
+/*colorer la barre de navigation*/
+.navbar{
+	background: #fff;
+
+}
+/*positionner le bouton qui nous range les boutons du menu au cas de changement du taille de la page*/
+.navbar-toggler{
+	border:none!important;
+}
+/*positionner et colorer les boutton de menu*/
+.nav-link{
+	color: #555!important;
+	font-weight: 630;
+	font-size: 16px;
+
+}
+
+
+
+/------------about----------------/
+
+*{	margin: 0;
+	padding: 0;
+	font-family: "open sans",sans-serif;
+}
+/*positionner notre section et colorer le background en gris clair*/
+.about-section{
+	width: 100%;
+	background:#f1f1f1;
+	padding: 40px;
+
+}
+
+
+/*center le titre*/
+.about-section h1{
+	text-align: center;
+}
+
+.about-section-row{
+
+	display: flex;
+	flex-wrap: wrap;
+}
+.about-section-col{
+	flex: 50%;
+}
+/*positionner le texte*/
+.about{
+	padding-right: 30px;
+
+}
+.about p{
+	text-align: justify;
+	margin-bottom: 20px;
+
+
+}
+/--------------------A PROPOS DE NOUS-----------/
+/*----!important est utilisée pour ajouter plus d'importance------*/
+ h1{
+ 	/*centrer le texte*/
+	text-align: center;
+	/*colorer text*/
+	color: #efefef !important;
+	/*Ajuster le texte en haut*/
+    padding-bottom: 10px;
+}
+
+ h1::after{
+ 	/*content est utilisé avec ::after et ::before pour générer notre texte*/
+	content: '';
+	background:#efefef;
+	/*display: block; pour que les textes s'affichent avec un saut de ligne avant et après*/
+	display: block;
+	height: 3px;
+	width: 170px;
+	margin: 20px auto 5px;
+}
+/-----------------ENTRER EN CONTACT--------------/
+h1{
+	text-align: center;
+	color: #555 !important;
+	padding-bottom: 10px;
+
+}
+h1::after{
+	content: '';
+	background: #007bff;
+	/*display: block; pour que les textes s'affichent avec un saut de ligne avant et après*/
+	display: block;
+	height: 3px;
+	width: 300px;
+	margin: 20px auto 5px;
+}
+
+
+/*----!important est utilisée pour ajouter plus d'importance------*/
+ h1{
+ 	/*centrer le texte*/
+	text-align: center;
+	/*colorer text*/
+	color: #007bff !important;
+	/*Ajuster le texte en haut*/
+    padding-bottom: 10px;
+}
+
+ h1::after{
+ 	/*content est utilisé avec ::after et ::before pour générer notre texte*/
+	content: '';
+	background:#007bff;
+	/*display: block; pour que les textes s'affichent avec un saut de ligne avant et après*/
+	display: block;
+	height: 3px;
+	width: 170px;
+	margin: 20px auto 5px;
+}
+/-----------CONTACT------------/
+#contact{
+	background:#efefef;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	color: #777;
+
+}
+.contact-form{
+	padding: 15px;
+
+}
+.form-control{
+	/*border-radius nous définitdes coins arrondis pour la bordure du texte*/ 
+	border-radius: 0 !important;
+	border:none !important;
+}
+::placeholder{
+	color: #999 !important;
+}
+.follow{
+	background:#fff;
+	padding: 10px;
+	margin: 15px;
+
+}
+/*design des icons*/
+.contact-info .fa{
+	margin: 10px;
+	color: #007bff;
+	font-weight: bold;
+}
+/------Footer------------/
+#footer{
+background: #333;
+color: #fff;
+padding: 12px;
+}
+.fa-heart-o{
+margin: 3px;
+color: red;
+
+}

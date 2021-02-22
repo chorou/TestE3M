@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8" />
+	<title>Inscription</title>
+	<link rel="stylesheet" href="inscription.css">
+	<script type="text/javascript" src="inscription.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.14.0/jquery.validate.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmj3pXKltysR_18r4fanO4fuLNVxLn9wk&signed_in=true&libraries=places&callback=initMap"
+        async defer></script>
+</head>
+<body>
+	<form  name="formulaire">
+		<div class="login-box">
+			<img src="logoAcceuil.jpg" class="avatar">
+			<h1>Inscrivez-vous</h1>
+			<p>Numéro de téléphone</p>
+			<input name="num" type="text" placeholder="Saisir votre numéro de téléphone" />
+			<p>Mot de passe</p>
+			<input name="pwd" type="password" placeholder="Saisir votre mot de passe" />
+			<p>Adresse</p>
+			<input name="adresse" type="text" placeholder="saisir votre adresse" />
+			<input type="submit" value="envoyer" onclick="verif_formulaire()"; />
+		</form>
+	</div>
+</body>
+</html>

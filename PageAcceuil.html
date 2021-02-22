@@ -1,0 +1,170 @@
+  <!DOCTYPE html>
+<html>
+<head>
+<title>ImmoHouse</title>
+<body>
+
+<!------------On utilise le framework bootstrap par ces lien pour développer des sites Webresponsifs, réactifs et adaptés aux mobiles.------------------->	
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrap.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="PageAcceuil.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!---- l'UTF-8 est une façon d'encoder les caractères Unicode dans plusieurs navigateur------>
+<meta charset="UTF-8">
+</head>
+
+
+
+<!-------------!navigation------------->
+
+
+<!-----------<section> représente une section générique d'un document, par exemple un groupe de contenu thématique------------->
+<section id="nav-bar"  >
+
+<!-----Les barres de navigation nécessitent une .navbar enveloppante avec .navbar-expand {-sm | -md | -lg | -xl} pour les classes de réduction et pour la responsivité du site---->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand"  href="#"><img src="logoAcceuil.jpg"></a>
+<!---.collapse.navbar-collapse pour regrouper et masquer le contenu de la barre de navigation par un point d'arrêt parent----->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" >
+	<span class="navbar-toggler-icon"></span>
+	</button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+<!--- La classe "ml-auto" permet d'aligner des éléments à droite de la barre---->
+    	<ul class="navbar-nav ml-auto">
+ <!---.nav-item et .nav-link sont des classes pour styliser ces boutons--->
+
+    		<li class="nav-item">
+    			<a class="nav-link" href="#top"style="font-size:19.5px;background-color: white;">ACCUEIL <i class="fa fa-home"></i></a>
+    		</li>
+    		<li class="nav-item">
+    			<a class="nav-link" href="#about"style="font-size:19.5px;background-color: white;">A PROPOS DE NOUS</a>
+    		</li>
+    		<li class="nav-item">
+    			<a class="nav-link" href="pageInscription"style="font-size:19.5px;background-color: white;">S'INSCRIRE</a>
+    		</li>
+    		<li class="nav-item">
+    			<a class="nav-link" href="loginPage.html"style="font-size:19.5px;background-color: white;">SE CONNECTER</a>
+    		</li>
+    		<li class="nav-item">
+    			<a class="nav-link" href="listeUser"style="font-size:19.5px;background-color: white;">NOTRE UTILISATEURS</a>
+    		</li>
+    		<li class="nav-item">
+    			<a class="nav-link" href="#contact"style="font-size:19.5px;background-color: white;">CONTACT</a>
+    		</li>
+    	</ul>
+    </div>
+</nav>
+
+</section>
+
+<!-----------------Video-------------->
+<!---pour rendre notre vidéo responsive on utilise la classe container ,roc et col-md-12----->
+<section >
+	<div class="container">
+        <div id="slider">
+		    <div class="row">
+			    <div class="col-md-12">
+	                <div id="headerSlider" class="carousel slide" data-ride="carousel">
+	                   	<div class="carousel-inner">
+	                		<div class="carousel-item active">
+			                     <center><video src="videoAcceuil.mp4" width="1000" style="border: solid 1.23px black;" height="500" controls ></video></center>
+			               </div>
+	                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!------------------about----------->
+
+<!---A chaque fois on nomme les classes des div pour qu'on les appellera dans la partie design pour styliser facilement notre site----->
+<!----Gardant toujours notre responsivité du site en utlisant le row et col--->
+<section id="about">
+    <div class="about-section" >
+	    <div class="inner-width">
+		    <h1>A propos de nous</h1>
+		    <div class="about-section-row">
+			    <div class="about-section-col">
+				    <div class="about">
+					<p><h4><center>
+						L'entreprise ImmoHouse a actuellement domicilié son établissement principal à PARIS 9 (siège social de l'entreprise). C'est l'établissement où sont centralisées l'administration et la direction effective de l'entreprise .
+                        L'établissement, situé au 22 RUE RODIER à PARIS 9 (75009) , est l' établissement siège de l'entreprise ImmoHouse. Créé le 17-08-2020, son activité est les fonds de placement et entités financières similaires.
+                    </center></h4> </p>
+                    </div>
+		     	</div>
+			</div>
+		</div>
+	</div>
+</section>   
+   
+
+
+
+<!---------------contact-------------->
+<!---ici c'est la partie en bas de notre page web et il est divisé en 2 c'est pour ça on utilise col-md-6 pour ne pas ruiner les données même si on change la taille d'ecran(garder la responsivité)---->
+
+<section id="contact">
+	<div class="container">
+		<h1>Entrer en contact</h1>
+		<script type="text/javascript" src="contact.js"></script>
+		<div class="row">
+			<div class="col-md-6">
+				<form class="contact-form">
+
+					<div class="form-group">
+						<input type="text" name="nom" placeholder="NOM">
+					</div>
+
+					<div class="form-group">
+						<input type="text" name="tele" placeholder="TELEPHONE">
+					</div>
+
+					<div class="form-group">
+						<input type="email" name="email" placeholder="EMAIL">
+					</div>
+
+					<div class="form-group">
+					<textarea type="text" class="msg" rows="4" placeholder="MESSAGE"></textarea>
+					</div>
+
+					<button type="submit" class="btn btn-primary" onclick="contact_formulaire();">Envoyer </button>
+
+				</form>
+			</div>
+
+			<div class="col-md-6 contact-info">
+
+				<div class="follow"><b>Adresse:</b><i class="fa fa-map-marker"></i>FRANCE, Situé au 22 RUE RODIER à PARIS 9 </div>
+
+				<div class="follow"><b>Téléphone:</b><i class="fa fa-phone"></i>0522010101</div>
+
+				<div class="follow"><b>Email:</b><i class="fa fa-envelope-o"></i>immo.house@gmail.com</div>
+
+				<div class="follow"><label><b>Réseaux sociaux:</b></label>
+				    <a href="https://www.facebook.com/ImmobilierEntreParticuliers/"><i class="fa fa-facebook"></i></a>
+					<a href="https://www.youtube.com/watch?v=pQ9PmNaVvEk&list=PLt7Hfn7iAKxbMdhStTV6FDj1hvl2ZPJAF"><i class="fa fa-youtube-play"></i></a>
+					<a href="https://twitter.com/Redactimmo/status/717651343050207232?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E717651343050207232%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.cartefinancement.com%2Fimmobilier%2Fles-50-specialistes-de-limmobilier-sur-twitter%2F"><i class="fa fa-twitter"></i></a>
+				</div>
+		    </div>
+	    </div>
+    </div>
+</section>
+
+
+<!--------------footer------->
+<section id="footer">
+	<div class="container text-center">
+		<p>	 Immo'House&nbsp;&nbsp;&nbsp;2020-2021 </p>
+	</div>
+</section>
+
+
+
+</body>
+</html>

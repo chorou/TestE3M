@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8" />
+  <title>Connexion</title>
+  <link rel="stylesheet" href="loginPage.css">
+  <script type="text/javascript" src="login.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.14.0/jquery.validate.min.js"></script>
+</head>
+<body>
+  <form method="post">
+  <div class="login-box">
+    <img src="logoAcceuil.jpg" class="avatar">
+    <h1>Connectez-vous</h1>
+    <p>Nom d'utilisateur</p>
+    <input name="login" type="text" placeholder="Saisir votre nom d'utilisateur" id="login" />
+    <p>Mot de passe</p>
+    <input name="pwd" type="password" placeholder="Saisir votre mot de passe" id="pwd" />
+    <input type="submit" value="Connexion" onclick="validate();" />
+    <a href="pageInscription.html">Pas encore inscrit?</a>
+  </div>
+  </form>
+</body>
+</html>
+
